@@ -12,7 +12,7 @@ function useTypewriter(texts: string[], speed = 80, pause = 2000) {
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
-    let timeout: NodeJS.Timeout;
+    let timeout: ReturnType<typeof setTimeout>;
 
     const tick = () => {
       const current = texts[textIndex];
@@ -80,7 +80,7 @@ function AnimatedTerminal() {
 
   useEffect(() => {
     let i = 0;
-    let timeout: NodeJS.Timeout;
+    let timeout: ReturnType<typeof setTimeout>;
 
     const addLine = () => {
       if (i >= TERMINAL_SCRIPT.length) {
