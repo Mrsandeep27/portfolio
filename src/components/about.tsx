@@ -44,10 +44,10 @@ export function About() {
   ];
 
   return (
-    <section id="about" className="py-24 bg-gray-950 relative">
+    <section id="about" className="py-16 sm:py-24 bg-gray-950 relative">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 sm:mb-16">
           <p className="text-green-400 text-sm mb-3 font-mono tracking-wider">
             {"// About Me"}
           </p>
@@ -61,16 +61,16 @@ export function About() {
         {/* Main content */}
         <div className="max-w-5xl mx-auto">
           {/* Code-style intro */}
-          <div className="bg-black border border-gray-800/60 rounded-xl overflow-hidden mb-12">
-            <div className="flex items-center gap-1.5 px-4 py-2.5 bg-gray-900/50 border-b border-gray-800/40">
-              <div className="w-2.5 h-2.5 rounded-full bg-red-500/70" />
-              <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/70" />
-              <div className="w-2.5 h-2.5 rounded-full bg-green-500/70" />
-              <span className="text-gray-600 text-xs font-mono ml-2">
+          <div className="bg-black border border-gray-800/60 rounded-xl overflow-hidden mb-6 sm:mb-12">
+            <div className="flex items-center gap-1.5 px-3 sm:px-4 py-2 sm:py-2.5 bg-gray-900/50 border-b border-gray-800/40">
+              <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-red-500/70" />
+              <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-yellow-500/70" />
+              <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-green-500/70" />
+              <span className="text-gray-600 text-[10px] sm:text-xs font-mono ml-2">
                 about.ts
               </span>
             </div>
-            <div className="p-6 font-mono text-sm leading-loose">
+            <div className="p-3 sm:p-6 font-mono text-[11px] sm:text-sm leading-relaxed sm:leading-loose overflow-x-auto">
               <p>
                 <span className="text-purple-400">const</span>{" "}
                 <span className="text-blue-300">sandeep</span>{" "}
@@ -129,21 +129,21 @@ export function About() {
           </div>
 
           {/* What I do grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 mb-6 sm:mb-12">
             {areas.map((area, i) => (
               <div
                 key={i}
-                className={`bg-black/50 border ${area.border} rounded-xl p-5 transition-all group`}
+                className={`bg-black/50 border ${area.border} rounded-xl p-3 sm:p-5 transition-all group`}
               >
                 <div
-                  className={`w-10 h-10 ${area.bg} rounded-lg flex items-center justify-center mb-4`}
+                  className={`w-8 h-8 sm:w-10 sm:h-10 ${area.bg} rounded-lg flex items-center justify-center mb-2 sm:mb-4`}
                 >
-                  <area.icon className={`w-5 h-5 ${area.color}`} />
+                  <area.icon className={`w-4 h-4 sm:w-5 sm:h-5 ${area.color}`} />
                 </div>
-                <h3 className="text-white font-bold text-sm mb-1.5">
+                <h3 className="text-white font-bold text-xs sm:text-sm mb-1">
                   {area.title}
                 </h3>
-                <p className="text-gray-600 text-xs leading-relaxed">
+                <p className="text-gray-600 text-[10px] sm:text-xs leading-relaxed hidden sm:block">
                   {area.desc}
                 </p>
               </div>
@@ -151,10 +151,10 @@ export function About() {
           </div>
 
           {/* Key facts */}
-          <div className="grid sm:grid-cols-2 gap-4">
-            <div className="bg-black/50 border border-gray-800/50 rounded-xl p-5 flex items-start gap-4">
-              <div className="w-10 h-10 bg-green-400/10 rounded-lg flex items-center justify-center shrink-0">
-                <Rocket className="w-5 h-5 text-green-400" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+            <div className="bg-black/50 border border-gray-800/50 rounded-xl p-3 sm:p-5 flex items-start gap-3 sm:gap-4">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-400/10 rounded-lg flex items-center justify-center shrink-0">
+                <Rocket className="w-4 h-4 sm:w-5 sm:h-5 text-green-400" />
               </div>
               <div>
                 <h3 className="text-white font-bold text-sm mb-1">
@@ -167,9 +167,9 @@ export function About() {
                 </p>
               </div>
             </div>
-            <div className="bg-black/50 border border-gray-800/50 rounded-xl p-5 flex items-start gap-4">
-              <div className="w-10 h-10 bg-green-400/10 rounded-lg flex items-center justify-center shrink-0">
-                <Zap className="w-5 h-5 text-green-400" />
+            <div className="bg-black/50 border border-gray-800/50 rounded-xl p-3 sm:p-5 flex items-start gap-3 sm:gap-4">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-400/10 rounded-lg flex items-center justify-center shrink-0">
+                <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-green-400" />
               </div>
               <div>
                 <h3 className="text-white font-bold text-sm mb-1">
