@@ -59,10 +59,10 @@ export function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-24 bg-black">
+    <section id="projects" className="py-16 sm:py-24 bg-black">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <p className="text-green-400 text-sm mb-3 font-mono tracking-wider">
+        <div className="text-center mb-8 sm:mb-16">
+          <p className="text-green-400 text-xs sm:text-sm mb-2 sm:mb-3 font-mono tracking-wider">
             {"// Projects"}
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -99,27 +99,27 @@ export function Projects() {
               </div>
 
               {/* Right — details */}
-              <div className="lg:col-span-3 p-6 lg:p-8 flex flex-col justify-between">
+              <div className="lg:col-span-3 p-4 sm:p-6 lg:p-8 flex flex-col justify-between">
                 <div>
-                  <p className="text-gray-400 text-sm leading-relaxed mb-5">
+                  <p className="text-gray-400 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-5">
                     {featured.description}
                   </p>
-                  <div className="flex flex-wrap gap-1.5 mb-5">
+                  <div className="flex flex-wrap gap-1 sm:gap-1.5 mb-3 sm:mb-5">
                     {featured.tech.map((t) => (
-                      <span key={t} className="bg-blue-500/5 border border-blue-500/15 text-blue-300/80 text-xs px-2.5 py-1 rounded-lg font-mono">
+                      <span key={t} className="bg-blue-500/5 border border-blue-500/15 text-blue-300/80 text-[10px] sm:text-xs px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-lg font-mono">
                         {t}
                       </span>
                     ))}
                   </div>
                 </div>
-                <div className="flex gap-3">
+                <div className="flex gap-2 sm:gap-3">
                   <a href={featured.demo} target="_blank" rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-white text-black text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-gray-200 transition-colors">
-                    <ExternalLink className="w-3.5 h-3.5" /> Live Demo
+                    className="inline-flex items-center gap-1.5 bg-white text-black text-xs sm:text-sm font-semibold px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg hover:bg-gray-200 transition-colors">
+                    <ExternalLink className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> Live Demo
                   </a>
                   <a href={featured.github} target="_blank" rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-gray-800 text-gray-300 text-sm px-5 py-2.5 rounded-lg hover:bg-gray-700 transition-colors">
-                    <Github className="w-3.5 h-3.5" /> Code
+                    className="inline-flex items-center gap-1.5 bg-gray-800 text-gray-300 text-xs sm:text-sm px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg hover:bg-gray-700 transition-colors">
+                    <Github className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> Code
                   </a>
                 </div>
               </div>
@@ -127,17 +127,16 @@ export function Projects() {
           </div>
 
           {/* Other projects — 2x2 grid */}
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-2 sm:gap-4">
             {projects.map((project, idx) => (
               <div key={idx} className="bg-gray-950 border border-gray-800/60 rounded-xl overflow-hidden hover:border-gray-700 transition-all group flex flex-col">
-                {/* Mini gradient header */}
-                <div className={`h-2 bg-gradient-to-r ${project.color}`} />
+                <div className={`h-1.5 sm:h-2 bg-gradient-to-r ${project.color}`} />
 
-                <div className="p-5 flex flex-col flex-1">
-                  <div className="flex items-start justify-between mb-3">
+                <div className="p-3 sm:p-5 flex flex-col flex-1">
+                  <div className="flex items-start justify-between mb-2 sm:mb-3">
                     <div>
-                      <h3 className="text-white font-bold text-lg">{project.title}</h3>
-                      <p className="text-gray-600 text-xs">{project.subtitle}</p>
+                      <h3 className="text-white font-bold text-sm sm:text-lg">{project.title}</h3>
+                      <p className="text-gray-600 text-[10px] sm:text-xs">{project.subtitle}</p>
                     </div>
                     <div className="flex gap-2">
                       <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-green-400 transition-colors">
@@ -151,11 +150,11 @@ export function Projects() {
                     </div>
                   </div>
 
-                  <p className="text-gray-500 text-sm leading-relaxed mb-4 flex-1">{project.description}</p>
+                  <p className="text-gray-500 text-[10px] sm:text-sm leading-relaxed mb-2 sm:mb-4 flex-1 line-clamp-3 sm:line-clamp-none">{project.description}</p>
 
-                  <div className="flex flex-wrap gap-1.5">
+                  <div className="flex flex-wrap gap-1">
                     {project.tech.map((t) => (
-                      <span key={t} className="bg-gray-900 border border-gray-800 text-gray-600 text-[11px] px-2 py-0.5 rounded-md font-mono hover:text-green-400 hover:border-green-400/30 transition-colors">
+                      <span key={t} className="bg-gray-900 border border-gray-800 text-gray-600 text-[9px] sm:text-[11px] px-1.5 sm:px-2 py-0.5 rounded-md font-mono hover:text-green-400 hover:border-green-400/30 transition-colors">
                         {t}
                       </span>
                     ))}
