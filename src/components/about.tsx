@@ -187,7 +187,7 @@ export function About() {
           {/* Resume CTA */}
           <div className="text-center mt-10">
             <a
-              href="https://drive.google.com/file/d/1uU_wSr0mYFIBKvwZYSndjOHe7F3Bd_9x/view?usp=drive_link"
+              href="https://drive.google.com/file/d/15DgoapkYgdV5YsXdrtFh4bP9SBJIa-0w/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
             >
