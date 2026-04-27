@@ -187,12 +187,12 @@ export function About() {
           {/* Resume CTA */}
           <div className="text-center mt-10">
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1uU_wSr0mYFIBKvwZYSndjOHe7F3Bd_9x/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
             >
               <span className="inline-flex items-center gap-2 bg-green-400 hover:bg-green-500 text-black font-bold px-7 py-3 rounded-lg transition-all hover:shadow-lg hover:shadow-green-400/20 cursor-pointer text-sm">
-                Download Resume
+                View Resume
               </span>
             </a>
           </div>

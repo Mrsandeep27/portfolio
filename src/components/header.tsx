@@ -43,7 +43,7 @@ export function Header() {
                 {item.name}
               </a>
             ))}
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1uU_wSr0mYFIBKvwZYSndjOHe7F3Bd_9x/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
               <span className="bg-green-400 hover:bg-green-500 text-black text-sm font-semibold px-5 py-2 rounded-lg transition-colors inline-block cursor-pointer">
                 Resume
               </span>
@@ -72,7 +72,7 @@ export function Header() {
                   {item.name}
                 </a>
               ))}
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1uU_wSr0mYFIBKvwZYSndjOHe7F3Bd_9x/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
                 <span className="bg-green-400 hover:bg-green-500 text-black text-sm font-semibold px-5 py-2 rounded-lg transition-colors block text-center cursor-pointer">
                   Resume
                 </span>
